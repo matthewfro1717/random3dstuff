@@ -12,6 +12,7 @@ class Config
 	public static var healthDrainMultiplier:Float;
 	public static var betterIcons:Bool;
 	public static var downscroll:Bool;
+	public static var botplay:Bool;
 	public static var noteGlow:Bool;
 	public static var ghostTapType:Int;
 	public static var noFpsCap:Bool;
@@ -29,6 +30,7 @@ class Config
 		FlxG.save.data.ghostTapType = 0;
 		FlxG.save.data.noFpsCap = true;
 		FlxG.save.data.controllerScheme = 0;
+		FlxG.save.data.botplay = false;
 		reload();
 
 	}
@@ -45,6 +47,7 @@ class Config
 		ghostTapType = FlxG.save.data.ghostTapType;
 		noFpsCap = FlxG.save.data.noFpsCap;
 		controllerScheme = FlxG.save.data.controllerScheme;
+		botPlay = FlxG.save.data.botplay;
 	}
 	
 	public static function write(
@@ -71,6 +74,8 @@ class Config
 		FlxG.save.data.ghostTapType = ghostTapTypeW;
 		FlxG.save.data.noFpsCap = noFpsCapW;
 		FlxG.save.data.controllerScheme = controllerSchemeW;
+		FlxG.save.data.botplay = botplayW;
+
 
 		FlxG.save.flush();
 		
@@ -100,6 +105,8 @@ class Config
 			FlxG.save.data.noFpsCap = true;
 		if(FlxG.save.data.controllerScheme == null)
 			FlxG.save.data.controllerScheme = 0;
+		if (FlxG.save.data.botplay == null)
+			FlxG.save.data.botplay = false;
 
 		if(FlxG.save.data.ee1 == null)
 			FlxG.save.data.ee1 = false;
