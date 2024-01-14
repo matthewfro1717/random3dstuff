@@ -60,6 +60,7 @@ class ConfigMenu extends MusicBeatState
 									"NOTE GLOW",
 									"IMPROVED HEALTH HEADS",
 									"CONTROLLER SCHEME",
+		                                                        "BOTPLAY",
 									"[EDIT KEY BINDS]"
 									];
 								
@@ -74,6 +75,7 @@ class ConfigMenu extends MusicBeatState
 									"Makes note arrows glow if they are able to be hit.",
 									"Adds low health icons for characters missing them and adds winning icons.\n[This disables modded health icons unless there is a version of the files included in the mod.]",
 									"TEMP",
+		                                                        "A bot plays for you!",
 									"Change key binds."
 									];
 
